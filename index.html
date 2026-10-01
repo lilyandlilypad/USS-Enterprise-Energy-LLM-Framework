@@ -1,15 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>USS ENTERPRISE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USS ENTERPRISE Energy-LLM Framework</title>
     <style>
-        body { background: #1a1f2e; color: #fff; font-family: Arial, sans-serif; padding: 40px; }
-        h1 { color: #fbbf24; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%); color: #fff; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); padding: 60px 20px; text-align: center; border-bottom: 3px solid #fbbf24; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header .subtitle { font-size: 1.2em; color: #dbeafe; margin-bottom: 10px; }
+        nav { background: rgba(0,0,0,0.3); padding: 20px; text-align: center; }
+        nav a { color: #fbbf24; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #fcd34d; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .hero { background: rgba(30, 58, 138, 0.2); border: 2px solid #3b82f6; border-radius: 10px; padding: 40px; margin-bottom: 40px; text-align: center; }
+        .hero h2 { color: #fbbf24; margin-bottom: 20px; font-size: 1.8em; }
+        .hero p { color: #bfdbfe; font-size: 1.1em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px; }
+        .card { background: rgba(30, 58, 138, 0.15); border-left: 4px solid #3b82f6; border-radius: 8px; padding: 25px; }
+        .card h3 { color: #fbbf24; margin-bottom: 15px; font-size: 1.3em; }
+        .card p { color: #bfdbfe; margin-bottom: 15px; }
+        .card a { color: #60a5fa; text-decoration: none; font-weight: bold; }
+        .card a:hover { color: #93c5fd; }
+        .stats { background: rgba(30, 58, 138, 0.2); border: 2px solid #3b82f6; border-radius: 10px; padding: 30px; margin-bottom: 40px; }
+        .stats h2 { color: #fbbf24; text-align: center; margin-bottom: 25px; }
+        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .stat { text-align: center; padding: 20px; background: rgba(59, 130, 246, 0.1); border-radius: 8px; }
+        .stat-num { font-size: 2em; font-weight: bold; color: #fbbf24; margin-bottom: 10px; }
+        .stat-label { color: #bfdbfe; }
+        .crew { background: rgba(30, 58, 138, 0.2); border: 2px solid #3b82f6; border-radius: 10px; padding: 30px; margin-bottom: 40px; }
+        .crew h2 { color: #fbbf24; margin-bottom: 20px; }
+        .crew-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+        .agent { background: rgba(59, 130, 246, 0.1); padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #3b82f6; }
+        .agent-name { font-weight: bold; color: #fbbf24; margin-bottom: 5px; }
+        .agent-role { font-size: 0.9em; color: #bfdbfe; }
+        .button { display: inline-block; background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); color: white; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; border: 1px solid #fbbf24; margin: 10px 10px 10px 0; }
+        .button:hover { transform: translateY(-2px); }
+        footer { background: rgba(0,0,0,0.5); padding: 30px 20px; text-align: center; border-top: 1px solid #444; color: #888; margin-top: 40px; }
+        footer a { color: #60a5fa; text-decoration: none; }
     </style>
 </head>
 <body>
-    <h1>🖖 USS ENTERPRISE Framework</h1>
-    <p>If you see this text, GitHub Pages is working!</p>
-    <a href="docs/00_MISSION_STATEMENT.md">View Framework</a>
+    <header>
+        <h1>🖖 USS ENTERPRISE</h1>
+        <h1>Energy-LLM Framework</h1>
+        <p class="subtitle">Systematic AI-Powered Energy Deal Evaluation</p>
+        <p style="color: #bfdbfe; font-style: italic; margin-top: 10px;">To boldly explore energy markets through Strange New Worlds</p>
+    </header>
+
+    <nav>
+        <a href="#framework">Framework</a>
+        <a href="#crew">11-Agent Crew</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="https://github.com/lilyandlilypad/USS-Enterprise-Energy-LLM-Framework" target="_blank">GitHub</a>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Transform Energy Deal Risk Into Actionable Advantage</h2>
+            <p>Using an 11-agent crew and 4-pillar research library, the USS ENTERPRISE Framework increases deal success probability from 40% to 70%+</p>
+        </div>
+
+        <div id="framework" class="grid">
+            <div class="card">
+                <h3>📖 Mission Statement</h3>
+                <p>Timeless philosophy behind the framework and its application to every energy deal.</p>
+                <a href="docs/00_MISSION_STATEMENT.md">Read More →</a>
+            </div>
+
+            <div class="card">
+                <h3>⚙️ Framework Overview</h3>
+                <p>Complete system architecture with 11-agent crew and 4-pillar library.</p>
+                <a href="docs/01_FRAMEWORK_OVERVIEW.md">Read More →</a>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Instantiation Template</h3>
+                <p>Step-by-step guide to apply the framework to new energy deals.</p>
+                <a href="docs/04_MISSION_INSTANTIATION_TEMPLATE.md">Read More →</a>
+            </div>
+        </div>
+
+        <div class="stats">
+            <h2>Framework Performance</h2>
+            <div class="stat-grid">
+                <div class="stat">
+                    <div class="stat-num">70%+</div>
+                    <div class="stat-label">Deal Success Rate</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">±5%</div>
+                    <div class="stat-label">Timeline Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">±10%</div>
+                    <div class="stat-label">Cost Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">11</div>
+                    <div class="stat-label">Specialized Agents</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="crew" class="crew">
+            <h2>The 11-Agent Crew</h2>
+            <div class="crew-grid">
+                <div class="agent"><div class="agent-name">Scotty</div><div class="agent-role">Navigator</div></div>
+                <div class="agent"><div class="agent-name">Tucker</div><div class="agent-role">Engineer</div></div>
+                <div class="agent"><div class="agent-name">Worf</div><div class="agent-role">Tactical</div></div>
+                <div class="agent"><div class="agent-name">T'Pol</div><div class="agent-role">Science</div></div>
+                <div class="agent"><div class="agent-name">Uhura</div><div class="agent-role">Comms</div></div>
+                <div class="agent"><div class="agent-name">McCoy</div><div class="agent-role">Medical</div></div>
+                <div class="agent"><div class="agent-name">Picard</div><div class="agent-role">Authority</div></div>
+                <div class="agent"><div class="agent-name">Spock</div><div class="agent-role">Logic</div></div>
+                <div class="agent"><div class="agent-name">Riker</div><div class="agent-role">First Officer</div></div>
+                <div class="agent"><div class="agent-name">Kirk</div><div class="agent-role">Captain</div></div>
+                <div class="agent"><div class="agent-name">Lily</div><div class="agent-role">Historian</div></div>
+            </div>
+        </div>
+
+        <div id="case-studies" class="grid">
+            <div class="card">
+                <h3>📊 Sell-Side Case Study</h3>
+                <p><strong>USS MISSISSIPPI LAND ACQUISITION</strong></p>
+                <p>Maximize value through de-risking strategy</p>
+                <p><strong>Outcome:</strong> $90-100M uplift | 90% success</p>
+                <a href="docs/CASE_STUDIES/MISSISSIPPI_SELL_SIDE/02_MISSISSIPPI_SELL_SIDE_ANALYSIS.md">View Case Study →</a>
+            </div>
+
+            <div class="card">
+                <h3>📊 Buy-Side Case Study</h3>
+                <p><strong>USS MISSISSIPPI INFRASTRUCTURE ACQUISITION</strong></p>
+                <p>Acquire profitably with disciplined risk gates</p>
+                <p><strong>Outcome:</strong> 70% success | 14-18% IRR</p>
+                <a href="docs/CASE_STUDIES/MISSISSIPPI_BUY_SIDE/03_MISSISSIPPI_BUY_SIDE_ANALYSIS.md">View Case Study →</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; background: rgba(30, 58, 138, 0.2); border: 2px solid #3b82f6; border-radius: 10px; padding: 40px; margin-top: 40px;">
+            <h2 style="color: #fbbf24; margin-bottom: 20px;">Ready to Explore the Framework?</h2>
+            <a href="docs/00_MISSION_STATEMENT.md" class="button">Start Reading</a>
+            <a href="https://github.com/lilyandlilypad/USS-Enterprise-Energy-LLM-Framework" class="button">View on GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>USS ENTERPRISE Energy-LLM Framework</p>
+        <p style="margin-top: 10px; color: #666;">Systematic AI-powered energy deal evaluation</p>
+        <p style="margin-top: 15px;">
+            <a href="https://github.com/lilyandlilypad/USS-Enterprise-Energy-LLM-Framework">GitHub Repository</a> | 
+            <a href="https://github.com/lilyandlilypad">@lilyandlilypad</a>
+        </p>
+    </footer>
 </body>
 </html>
