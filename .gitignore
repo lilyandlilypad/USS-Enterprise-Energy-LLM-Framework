@@ -1,0 +1,30 @@
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+ 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+ 
+# Node
+node_modules/
+npm-debug.log
+ 
+# OS
+Thumbs.db
+ 
+# Sensitive
+*.key
+*.pem
+secrets/
+.env
+ 
+# Temporary
+*.tmp
+*.bak
+*.backup
